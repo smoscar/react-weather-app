@@ -10,7 +10,7 @@ class Calendar extends Component {
 	}
 	
 	componentDidMount(){
-		fetch('/api/v1/getWeek')
+		fetch('/api/v1/getWeek', {method: 'POST'})
 			.then(res => res.json())
 			.then(week => this.setState({week}, () => console.log('Week fetched..', week)))
 	}
