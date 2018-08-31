@@ -1,0 +1,15 @@
+[
+{"city":"West Wendover","lat":"40.7407","lng":"-114.0783","state":"Nevada","id":"1840021336"},
+{"city":"Henderson","lat":"36.0145","lng":"-115.0362","state":"Nevada","id":"1840020361"},
+{"city":"Winnemucca","lat":"40.9646","lng":"-117.7250","state":"Nevada","id":"1840021334"},
+{"city":"Fernley","lat":"39.5612","lng":"-119.1925","state":"Nevada","id":"1840020214"},
+{"city":"Carson City","lat":"39.1512","lng":"-119.7474","state":"Nevada","id":"1840003826"},
+{"city":"Sparks","lat":"39.5727","lng":"-119.7131","state":"Nevada","id":"1840021337"},
+{"city":"Fallon","lat":"39.4739","lng":"-118.7780","state":"Nevada","id":"1840020191"},
+{"city":"Boulder City","lat":"35.8407","lng":"-114.9256","state":"Nevada","id":"1840019028"},
+{"city":"Las Vegas","lat":"36.2288","lng":"-115.2603","state":"Nevada","id":"1840020364"},
+{"city":"Mesquite","lat":"36.8035","lng":"-114.1325","state":"Nevada","id":"1840020362"},
+{"city":"North Las Vegas","lat":"36.2880","lng":"-115.0901","state":"Nevada","id":"1840020363"},
+{"city":"Elko","lat":"40.8383","lng":"-115.7677","state":"Nevada","id":"1840020120"},
+{"city":"Reno","lat":"39.5487","lng":"-119.8486","state":"Nevada","id":"1840020121"}
+]

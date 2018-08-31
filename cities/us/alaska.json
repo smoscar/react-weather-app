@@ -1,0 +1,13 @@
+[
+{"city":"Kodiak","lat":"57.7933","lng":"-152.4029","state":"Alaska","id":"1840023301"},
+{"city":"Anchorage","lat":"61.1508","lng":"-149.1091","state":"Alaska","id":"1840023385"},
+{"city":"Wasilla","lat":"61.5769","lng":"-149.4668","state":"Alaska","id":"1840023371"},
+{"city":"Palmer","lat":"61.5974","lng":"-149.1147","state":"Alaska","id":"1840023379"},
+{"city":"Soldotna","lat":"60.4863","lng":"-151.0676","state":"Alaska","id":"1840023415"},
+{"city":"Kenai","lat":"60.5614","lng":"-151.1976","state":"Alaska","id":"1840023421"},
+{"city":"Homer","lat":"59.6530","lng":"-151.5256","state":"Alaska","id":"1840023419"},
+{"city":"Fairbanks","lat":"64.8353","lng":"-147.6533","state":"Alaska","id":"1840023463"},
+{"city":"Ketchikan","lat":"55.3567","lng":"-131.6712","state":"Alaska","id":"1840023270"},
+{"city":"Sitka","lat":"57.2405","lng":"-135.3152","state":"Alaska","id":"1840023319"},
+{"city":"Juneau","lat":"58.4566","lng":"-134.1776","state":"Alaska","id":"1840023306"}
+]

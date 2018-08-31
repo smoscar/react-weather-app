@@ -1,0 +1,11 @@
+[
+{"city":"Barre","lat":"44.1997","lng":"-72.5083","state":"Vermont","id":"1840002186"},
+{"city":"Winooski","lat":"44.4951","lng":"-73.1842","state":"Vermont","id":"1840002312"},
+{"city":"Montpelier","lat":"44.2658","lng":"-72.5717","state":"Vermont","id":"1840002187"},
+{"city":"Burlington","lat":"44.4877","lng":"-73.2314","state":"Vermont","id":"1840002310"},
+{"city":"Saint Albans","lat":"44.8119","lng":"-73.0846","state":"Vermont","id":"1840002267"},
+{"city":"South Burlington","lat":"44.4622","lng":"-73.2203","state":"Vermont","id":"1840002311"},
+{"city":"Essex Junction","lat":"44.4903","lng":"-73.1140","state":"Vermont","id":"1840004083"},
+{"city":"Rutland","lat":"43.6091","lng":"-72.9782","state":"Vermont","id":"1840002632"},
+{"city":"Bellows Falls","lat":"43.1344","lng":"-72.4550","state":"Vermont","id":"1840004334"}
+]

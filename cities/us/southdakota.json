@@ -1,0 +1,20 @@
+[
+{"city":"Box Elder","lat":"44.1128","lng":"-103.0807","state":"South Dakota","id":"1840002183"},
+{"city":"Hartford","lat":"43.6211","lng":"-96.9431","state":"South Dakota","id":"1840002653"},
+{"city":"Sioux Falls","lat":"43.5382","lng":"-96.7315","state":"South Dakota","id":"1840002648"},
+{"city":"Watertown","lat":"44.9096","lng":"-97.1539","state":"South Dakota","id":"1840002156"},
+{"city":"Yankton","lat":"42.8900","lng":"-97.3923","state":"South Dakota","id":"1840003058"},
+{"city":"Vermillion","lat":"42.7825","lng":"-96.9243","state":"South Dakota","id":"1840003082"},
+{"city":"Huron","lat":"44.3622","lng":"-98.2102","state":"South Dakota","id":"1840002373"},
+{"city":"Rapid City","lat":"44.0709","lng":"-103.2200","state":"South Dakota","id":"1840002180"},
+{"city":"Spearfish","lat":"44.4912","lng":"-103.8166","state":"South Dakota","id":"1840002374"},
+{"city":"Aberdeen","lat":"45.4647","lng":"-98.4678","state":"South Dakota","id":"1840002032"},
+{"city":"Brookings","lat":"44.3027","lng":"-96.7856","state":"South Dakota","id":"1840002506"},
+{"city":"Mitchell","lat":"43.7295","lng":"-98.0336","state":"South Dakota","id":"1840002642"},
+{"city":"Pierre","lat":"44.3748","lng":"-100.3205","state":"South Dakota","id":"1840000313"},
+{"city":"Sturgis","lat":"44.4093","lng":"-103.5184","state":"South Dakota","id":"1840002174"},
+{"city":"Tea","lat":"43.4515","lng":"-96.8346","state":"South Dakota","id":"1840002841"},
+{"city":"Brandon","lat":"43.5928","lng":"-96.5799","state":"South Dakota","id":"1840002650"},
+{"city":"Madison","lat":"44.0062","lng":"-97.1084","state":"South Dakota","id":"1840002540"},
+{"city":"Belle Fourche","lat":"44.6635","lng":"-103.8562","state":"South Dakota","id":"1840002127"}
+]

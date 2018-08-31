@@ -1,0 +1,21 @@
+[
+{"city":"Hamilton","lat":"46.2524","lng":"-114.1598","state":"Montana","id":"1840019896"},
+{"city":"Butte","lat":"45.9020","lng":"-112.6571","state":"Montana","id":"1840032850"},
+{"city":"Missoula","lat":"46.8687","lng":"-114.0089","state":"Montana","id":"1840019840"},
+{"city":"Belgrade","lat":"45.7822","lng":"-111.1757","state":"Montana","id":"1840018508"},
+{"city":"Kalispell","lat":"48.2155","lng":"-114.3262","state":"Montana","id":"1840018350"},
+{"city":"Great Falls","lat":"47.5016","lng":"-111.2993","state":"Montana","id":"1840019839"},
+{"city":"Billings","lat":"45.7892","lng":"-108.5498","state":"Montana","id":"1840018496"},
+{"city":"Glendive","lat":"47.1102","lng":"-104.7070","state":"Montana","id":"1840019824"},
+{"city":"Miles City","lat":"46.4060","lng":"-105.8387","state":"Montana","id":"1840019878"},
+{"city":"Lewistown","lat":"47.0517","lng":"-109.4540","state":"Montana","id":"1840019823"},
+{"city":"Havre","lat":"48.5417","lng":"-109.6782","state":"Montana","id":"1840019758"},
+{"city":"Sidney","lat":"47.7149","lng":"-104.1665","state":"Montana","id":"1840021085"},
+{"city":"Whitefish","lat":"48.4333","lng":"-114.3594","state":"Montana","id":"1840021047"},
+{"city":"Bozeman","lat":"45.6828","lng":"-111.0545","state":"Montana","id":"1840018509"},
+{"city":"Laurel","lat":"45.6734","lng":"-108.7707","state":"Montana","id":"1840019900"},
+{"city":"Columbia Falls","lat":"48.3698","lng":"-114.1914","state":"Montana","id":"1840018351"},
+{"city":"Helena","lat":"46.5963","lng":"-112.0196","state":"Montana","id":"1840019820"},
+{"city":"Polson","lat":"47.6896","lng":"-114.1430","state":"Montana","id":"1840019802"},
+{"city":"Livingston","lat":"45.6667","lng":"-110.5537","state":"Montana","id":"1840019906"}
+]

@@ -1,0 +1,14 @@
+[
+{"city":"Minot","lat":"48.2375","lng":"-101.2779","state":"North Dakota","id":"1840000053"},
+{"city":"Bismarck","lat":"46.8127","lng":"-100.7694","state":"North Dakota","id":"1840001926"},
+{"city":"Mandan","lat":"46.8267","lng":"-100.8846","state":"North Dakota","id":"1840000199"},
+{"city":"Jamestown","lat":"46.9065","lng":"-98.6927","state":"North Dakota","id":"1840000153"},
+{"city":"Watford City","lat":"47.8021","lng":"-103.2748","state":"North Dakota","id":"1840001892"},
+{"city":"Dickinson","lat":"46.8907","lng":"-102.7891","state":"North Dakota","id":"1840000192"},
+{"city":"Grand Forks","lat":"47.9120","lng":"-97.0751","state":"North Dakota","id":"1840000101"},
+{"city":"Valley City","lat":"46.9225","lng":"-98.0071","state":"North Dakota","id":"1840000160"},
+{"city":"Williston","lat":"48.1834","lng":"-103.6330","state":"North Dakota","id":"1840001871"},
+{"city":"West Fargo","lat":"46.8565","lng":"-96.9048","state":"North Dakota","id":"1840001935"},
+{"city":"Fargo","lat":"46.8654","lng":"-96.8290","state":"North Dakota","id":"1840000177"},
+{"city":"Wahpeton","lat":"46.2719","lng":"-96.6118","state":"North Dakota","id":"1840000228"}
+]

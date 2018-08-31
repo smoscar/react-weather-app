@@ -1,0 +1,21 @@
+[
+{"city":"Presque Isle","lat":"46.6868","lng":"-67.9874","state":"Maine","id":"1840000146"},
+{"city":"Biddeford","lat":"43.4674","lng":"-70.4512","state":"Maine","id":"1840000342"},
+{"city":"Saco","lat":"43.5390","lng":"-70.4624","state":"Maine","id":"1840000343"},
+{"city":"Old Town","lat":"44.9491","lng":"-68.7249","state":"Maine","id":"1840000240"},
+{"city":"Sanford","lat":"43.4244","lng":"-70.7573","state":"Maine","id":"1840002672"},
+{"city":"Auburn","lat":"44.0850","lng":"-70.2492","state":"Maine","id":"1840000319"},
+{"city":"South Portland","lat":"43.6310","lng":"-70.2895","state":"Maine","id":"1840000328"},
+{"city":"Waterville","lat":"44.5440","lng":"-69.6626","state":"Maine","id":"1840000305"},
+{"city":"Rockland","lat":"44.1274","lng":"-69.1369","state":"Maine","id":"1840000322"},
+{"city":"Caribou","lat":"46.8662","lng":"-67.9919","state":"Maine","id":"1840000145"},
+{"city":"Gardiner","lat":"44.1910","lng":"-69.7921","state":"Maine","id":"1840000303"},
+{"city":"Westbrook","lat":"43.6955","lng":"-70.3538","state":"Maine","id":"1840000329"},
+{"city":"Lewiston","lat":"44.0915","lng":"-70.1681","state":"Maine","id":"1840000320"},
+{"city":"Bath","lat":"43.9346","lng":"-69.8346","state":"Maine","id":"1840000332"},
+{"city":"Bangor","lat":"44.8322","lng":"-68.7906","state":"Maine","id":"1840000238"},
+{"city":"Augusta","lat":"44.3341","lng":"-69.7319","state":"Maine","id":"1840000302"},
+{"city":"Brewer","lat":"44.7835","lng":"-68.7352","state":"Maine","id":"1840000239"},
+{"city":"Portland","lat":"43.6772","lng":"-70.2713","state":"Maine","id":"1840000327"},
+{"city":"Ellsworth","lat":"44.5847","lng":"-68.4875","state":"Maine","id":"1840000281"}
+]

@@ -1,0 +1,19 @@
+[
+{"city":"Worland","lat":"44.0026","lng":"-107.9543","state":"Wyoming","id":"1840021266"},
+{"city":"Powell","lat":"44.7962","lng":"-108.7682","state":"Wyoming","id":"1840019976"},
+{"city":"Green River","lat":"41.5124","lng":"-109.4708","state":"Wyoming","id":"1840020100"},
+{"city":"Torrington","lat":"42.0658","lng":"-104.1621","state":"Wyoming","id":"1840021302"},
+{"city":"Jackson","lat":"43.4723","lng":"-110.7740","state":"Wyoming","id":"1840021258"},
+{"city":"Laramie","lat":"41.3095","lng":"-105.6097","state":"Wyoming","id":"1840020096"},
+{"city":"Cheyenne","lat":"41.1418","lng":"-104.7943","state":"Wyoming","id":"1840018713"},
+{"city":"Casper","lat":"42.8430","lng":"-106.3205","state":"Wyoming","id":"1840038324"},
+{"city":"Rock Springs","lat":"41.5950","lng":"-109.2237","state":"Wyoming","id":"1840020101"},
+{"city":"Lander","lat":"42.8313","lng":"-108.7599","state":"Wyoming","id":"1840020027"},
+{"city":"Rawlins","lat":"41.7849","lng":"-107.2265","state":"Wyoming","id":"1840020094"},
+{"city":"Douglas","lat":"42.7547","lng":"-105.3834","state":"Wyoming","id":"1840018655"},
+{"city":"Cody","lat":"44.5212","lng":"-109.0550","state":"Wyoming","id":"1840018595"},
+{"city":"Gillette","lat":"44.2793","lng":"-105.5013","state":"Wyoming","id":"1840019978"},
+{"city":"Evanston","lat":"41.2602","lng":"-110.9646","state":"Wyoming","id":"1840020122"},
+{"city":"Sheridan","lat":"44.7949","lng":"-106.9611","state":"Wyoming","id":"1840021243"},
+{"city":"Riverton","lat":"43.0416","lng":"-108.4125","state":"Wyoming","id":"1840020026"}
+]

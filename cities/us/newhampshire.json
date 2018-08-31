@@ -1,0 +1,15 @@
+[
+{"city":"Keene","lat":"42.9496","lng":"-72.2997","state":"New Hampshire","id":"1840003050"},
+{"city":"Concord","lat":"43.2307","lng":"-71.5595","state":"New Hampshire","id":"1840002747"},
+{"city":"Manchester","lat":"42.9844","lng":"-71.4445","state":"New Hampshire","id":"1840002983"},
+{"city":"Rochester","lat":"43.2991","lng":"-70.9791","state":"New Hampshire","id":"1840002809"},
+{"city":"Claremont","lat":"43.3790","lng":"-72.3368","state":"New Hampshire","id":"1840002805"},
+{"city":"Berlin","lat":"44.4871","lng":"-71.2601","state":"New Hampshire","id":"1840002100"},
+{"city":"Portsmouth","lat":"43.0580","lng":"-70.7826","state":"New Hampshire","id":"1840002932"},
+{"city":"Somersworth","lat":"43.2534","lng":"-70.8856","state":"New Hampshire","id":"1840002810"},
+{"city":"Dover","lat":"43.1887","lng":"-70.8845","state":"New Hampshire","id":"1840002808"},
+{"city":"Laconia","lat":"43.5727","lng":"-71.4777","state":"New Hampshire","id":"1840002683"},
+{"city":"Franklin","lat":"43.4500","lng":"-71.6689","state":"New Hampshire","id":"1840002748"},
+{"city":"Lebanon","lat":"43.6353","lng":"-72.2531","state":"New Hampshire","id":"1840002192"},
+{"city":"Nashua","lat":"42.7492","lng":"-71.4910","state":"New Hampshire","id":"1840002984"}
+]
