@@ -1,9 +1,13 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import './location.css';
 
+import { connect } from 'react-redux';
+import { fetchStates, fetchCities, selectState } from '../../actions/locationActions';
+
 class Location extends Component {
-	constructor() {
-		super();
+	constructor(props) {
+		super(props);
 		this.state = {
 			selectedState: '',
 			selectedCity: '',
@@ -22,17 +26,8 @@ class Location extends Component {
 		
 		const selectedState = event.target.value;
 		
-		fetch('/api/v1/cities/us/'+ selectedState +'/')
-			.then( res => res.json() )
-			.then( cities => {
-				cities.sort( (a, b) => a.city.toLowerCase() > b.city.toLowerCase() ? 1 : -1 );
-				
-				this.setState({
-					selectedState: selectedState,
-					selectedCity: (cities[0].lat + "," + cities[0].lng),
-					cities: cities
-				}, () => console.log('Cities fetched..', cities));
-			})
+		this.props.selectState(selectedState)
+		this.props.fetchCities(selectedState)
 	}
 	
 	//Function that handles the update of the city dropdown
@@ -65,36 +60,30 @@ class Location extends Component {
 	}
 	
 	componentDidMount(){
-		//The states in the US are fetched from the API
-		fetch('/api/v1/cities/us/')
-			.then(res => res.json())
-			.then(states => {
-				states.sort( (a, b) => a.name.toLowerCase() > b.name.toLowerCase() ? 1 : -1 );
-				
-				//After sorting the states, the first is used to get the cities
-				this.setState({
-					selectedState: states[0].value,
-					states: states,
-				}, () => console.log("States fetched..", states));
-				
+		const that = this;
+		this.props.fetchStates()
+			.then(() => {
 				//The event handler gets triggered to get the initial cities
-				this.handleStatesChange({target: {value: states[0].value}});
+				this.handleStatesChange({target: {value: that.props.states[0].value}});
 			})
 	}
 	
   render() {
+		
+		//debugger 
+		
     return (
       <div>
 				<form onSubmit={this.onSubmit}>
-					<select name="state" value={this.state.selectedState} onChange={this.handleStatesChange}>
-					 {this.state.states.map( state => 
+					<select name="state" value={this.props.selectedState.value} onChange={this.handleStatesChange}>
+					 {this.props.states.map( state => 
 						 <option key={state.id} value={state.value}>
 						 	{state.name}
 						 </option>
 					 )}
 					</select>
 					<select name="city" value={this.state.selectedCity} onChange={this.handleCitiesChange}>
-					 {this.state.cities.map( city => 
+					 {this.props.cities.map( city => 
 						 <option key={city.id} value={city.lat + "," + city.lng}>
 						 	{city.city}
 						 </option>
@@ -107,4 +96,25 @@ class Location extends Component {
   }
 }
 
-export default Location;
+Location.propTypes = {
+	fetchStates: PropTypes.func.isRequired,
+	fetchCities: PropTypes.func.isRequired,
+	selectState: PropTypes.func.isRequired,
+	selectedState: PropTypes.object.isRequired,
+	states: PropTypes.array.isRequired,
+	cities: PropTypes.array.isRequired
+}
+
+const mapStateToProps = state => ({
+	selectedState: state.locations.selectedState,
+	states: state.locations.states,
+	cities: state.locations.cities
+})
+
+const mapDispatchToProps = {
+	fetchStates: fetchStates,
+	fetchCities: fetchCities,
+	selectState: selectState
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Location);

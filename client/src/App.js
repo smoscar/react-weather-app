@@ -3,12 +3,11 @@ import logo from './logo.svg';
 import './App.css';
 
 import { Provider } from 'react-redux';
-import { createStore, applyMiddleware } from 'redux';
 
 import Calendar from './components/calendar/calendar';
 import Location from './components/location/location';
 
-const store = createStore(() => [], {}, applyMiddleware())
+import store from './store';
 
 class App extends Component {
   render() {
