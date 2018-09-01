@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import './vendor/fontawesome/css/font-awesome.css';
 import './App.css';
 
 import { Provider } from 'react-redux';
 
-import Calendar from './components/calendar/calendar';
-import Location from './components/location/location';
+import Wrapper from './components/wrapper/wrapper';
 
 import store from './store';
 
@@ -13,14 +12,7 @@ class App extends Component {
   render() {
     return (
 			<Provider store={store}>
-	      <div className="App time12 cloudy">
-					<div className="wrapper">
-						<section class = "AppContainer">
-		        	<Location />
-		        	<Calendar />
-						</section>
-					</div>
-	      </div>
+	      <Wrapper />
 			</Provider>
     );
   }
