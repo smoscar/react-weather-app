@@ -1,10 +1,11 @@
-import { FETCH_STATES, FETCH_CITIES, SELECT_STATES } from '../actions/types';
+import { FETCH_STATES, FETCH_CITIES, SELECT_STATES, SELECT_CITIES, FETCH_WEEK } from '../actions/types';
 
 const initialState = {
 	selectedState: {},
-	selectedCity: {},
+	selectedCoords: '',
 	states: [],
-	cities: []
+	cities: [],
+	weekDays: []
 }
 
 export default function(state = initialState, action) {
@@ -23,7 +24,17 @@ export default function(state = initialState, action) {
 		case SELECT_STATES:
 			return {
 				...state,
-				selectedState: state.states.filter( s => s.value == action.payload ).pop()
+				selectedState: state.states.filter( s => s.value === action.payload ).pop()
+			};
+		case SELECT_CITIES:
+			return {
+				...state,
+				selectedCoords: action.payload
+			};
+		case FETCH_WEEK:
+			return {
+				...state,
+				weekDays: action.payload
 			};
 		default:
 			return state;

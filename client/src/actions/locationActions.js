@@ -1,4 +1,4 @@
-import { FETCH_STATES, FETCH_CITIES, SELECT_STATES } from './types';
+import { FETCH_STATES, FETCH_CITIES, SELECT_STATES, SELECT_CITIES, FETCH_WEEK } from './types';
 
 //The states in the US are fetched from the API
 export const fetchStates = () => dispatch => fetch('/api/v1/cities/us/')
@@ -33,3 +33,28 @@ export const selectState = selectedState => dispatch => {
 		payload: selectedState
 	});
 }
+
+//Action triggered when a city is selected
+export const selectCity = selectedCoords => dispatch => {
+	dispatch({
+		type: SELECT_CITIES,
+		payload: selectedCoords
+	});
+}
+
+//Action that fetches the days for the previous week for the selected location
+export const fetchWeekForLocation = locationCoords => dispatch => fetch('/api/v1/getWeek', {
+		method: 'POST',
+		headers: {
+			'content-type': 'application/json'
+		},
+		body: JSON.stringify( locationCoords )
+	})
+	.then( res => res.json() )
+	.then( week => {
+		//The week data is dispatched
+		dispatch({
+			type: FETCH_WEEK,
+			payload: week
+		});
+	})
