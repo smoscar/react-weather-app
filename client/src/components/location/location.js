@@ -88,21 +88,27 @@ class Location extends Component {
     return (
       <header className={headerClasses} onClick={this.activateHeader}>
 				<form onSubmit={this.onSubmit}>
-					<select name="state" value={this.props.selectedState.value} onChange={this.handleStatesChange}>
-					 {this.props.states.map( state => 
-						 <option key={state.id} value={state.value}>
-						 	{state.name}
-						 </option>
-					 )}
-					</select>
-					<select name="city" value={this.props.selectedCoords} onChange={this.handleCitiesChange}>
-					 {this.props.cities.map( city => 
-						 <option key={city.id} value={city.lat + "," + city.lng}>
-						 	{city.city}
-						 </option>
-					 )}
-					</select>
-					<button type="submit">Submit</button>
+					<div className="select-box state-box">
+						<select name="state" value={this.props.selectedState.value} onChange={this.handleStatesChange}>
+						 {this.props.states.map( state => 
+							 <option key={state.id} value={state.value}>
+							 	{state.name}
+							 </option>
+						 )}
+						</select>
+					</div>
+					<div className="select-box city-box">
+						<select name="city" value={this.props.selectedCoords} onChange={this.handleCitiesChange}>
+						 {this.props.cities.map( city => 
+							 <option key={city.id} value={city.lat + "," + city.lng}>
+							 	{city.city}
+							 </option>
+						 )}
+						</select>
+					</div>
+					<div className="submit-box">
+						<button type="submit">Update Location</button>
+					</div>
 				</form>
       </header>
     );

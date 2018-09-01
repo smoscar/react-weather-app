@@ -13,13 +13,13 @@ class App extends Component {
   render() {
     return (
 			<Provider store={store}>
-	      <div className="App">
-	        <header className="App-header">
-	          <img src={logo} className="App-logo" alt="logo" />
-	          <h1 className="App-title">Welcome to React</h1>
-	        </header>
-	        <Location />
-	        <Calendar />
+	      <div className="App time12 cloudy">
+					<div className="wrapper">
+						<section class = "AppContainer">
+		        	<Location />
+		        	<Calendar />
+						</section>
+					</div>
 	      </div>
 			</Provider>
     );

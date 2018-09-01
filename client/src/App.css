@@ -1,28 +1,116 @@
+/*General Styles*/
 .App {
-  text-align: center;
+	margin: 0;
+	padding: 0;
+	background: linear-gradient(180deg, #e96c3c, #eebd4d, #d1e4fe, #5e8ef5, #3e2082, #062138);
+	background-size: 600% 600%;
+	-webkit-transition: all 1s cubic-bezier(0.785, 0.170, 0.375, 0.845);
+	-moz-transition: all 1s cubic-bezier(0.785, 0.170, 0.375, 0.845);
+	-o-transition: all 1s cubic-bezier(0.785, 0.170, 0.375, 0.845);
+	transition: all 1s cubic-bezier(0.785, 0.170, 0.375, 0.845);
+	overflow: hidden;
+	position: absolute;
+	width: 100%;
+	height: 100%;
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.App:before,
+.App:after {
+	content: ' ';
+	background: #FFFFFF;
+	display: block;
+	position: absolute;
+	top:0;
+	left: 50%;
+	-webkit-transition: all 2s cubic-bezier(0.785, 0.170, 0.375, 0.845);
+	-moz-transition: all 2s cubic-bezier(0.785, 0.170, 0.375, 0.845);
+	-o-transition: all 2s cubic-bezier(0.785, 0.170, 0.375, 0.845);
+	transition: all 2s cubic-bezier(0.785, 0.170, 0.375, 0.845);
 }
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.App:before {
+	opacity: 0.1;
+	width: 240px;
+	height: 240px;
+	border-radius: 140px;
+	transform: translateX(-100%);
 }
-
-.App-title {
-  font-size: 1.5em;
+.App:after {
+	opacity: 0.6;
+	width: 140px;
+	height: 140px;
+	border-radius: 70px;
+	transform: translateX(-135%) translateY(35%);
 }
-
-.App-intro {
-  font-size: large;
+.App.time0 { background-position: 0% 0%; }
+.App.time0:before, .App.time0:after { top: 100% }
+.App.time2 { background-position: 0% 4%; }
+.App.time2:before, .App.time2:after { top: 80% }
+.App.time4 { background-position: 0% 8.5%; }
+.App.time4:before, .App.time4:after { top: 70% }
+.App.time6 { background-position: 0% 25.5%; }
+.App.time6:before, .App.time6:after { top: 60% }
+.App.time8 { background-position: 0% 40%; }
+.App.time8:before, .App.time8:after { top: 50% }
+.App.time10 { background-position: 0% 48%; }
+.App.time10:before, .App.time10:after { top: 40% }
+.App.time12 { background-position: 0% 51%; }
+.App.time12:before, .App.time12:after { top: 20% }
+.App.time14 { background-position: 0% 59.5%; }
+.App.time14:before, .App.time14:after { top: 0% }
+.App.time16 { background-position: 0% 68%; }
+.App.time16:before, .App.time16:after { top: -40% }
+.App.time18 { background-position: 0% 76.5%; }
+.App.time18:before, .App.time18:after {
+	top: 100%;
+	-webkit-transition: initial;
+	-moz-transition: initial;
+	-o-transition: initial;
+	transition: initial;
 }
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.App.time20 { background-position: 0% 85%; }
+.App.time20:before, .App.time20:after { top: 80% }
+.App.time22 { background-position: 0% 92.5%; }
+.App.time22:before, .App.time22:after { top: 60% }
+.App.time24 { background-position: 0% 100%; }
+.App.time24:before, .App.time24:after { top: 40% }
+.wrapper {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+.wrapper:before {
+	content: '';
+	background: url(./clouds.png) no-repeat;
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: absolute;
+	background-position: center;
+	background-size: 39%;
+	opacity: 0.85;
+	top: 100%;
+	-webkit-transition: all 2s cubic-bezier(0.785, 0.170, 0.375, 0.845);
+	-moz-transition: all 2s cubic-bezier(0.785, 0.170, 0.375, 0.845);
+	-o-transition: all 2s cubic-bezier(0.785, 0.170, 0.375, 0.845);
+	transition: all 2s cubic-bezier(0.785, 0.170, 0.375, 0.845);
+}
+.cloudy .wrapper:before {
+	top:10%;
+}
+.AppContainer {
+	position: relative;
+	width: 428px;
+	height: 880px;
+	background: url(./iPhone_bg.png) no-repeat center;
+	background-size: cover;
+	margin: 0 auto;
+	padding: 28px;
+	padding-top: 47px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 2;
 }

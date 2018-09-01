@@ -21,15 +21,15 @@ class Calendar extends Component {
 	
   render() {
     return (
-      <div>
+      <footer>
 				<ul>
 				 {this.props.weekDays.map( day => 
 					 <li key={day.time}>
-					 	{day.dayName}
+					 	<span>{day.dayName}</span>
 					 </li>
 				 )}
 				</ul>
-      </div>
+      </footer>
     );
   }
 }

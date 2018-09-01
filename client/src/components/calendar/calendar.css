@@ -1,0 +1,59 @@
+/*Calendar component styles*/
+.AppContainer footer {
+	position: absolute;
+	bottom: 28px;
+	background: #FFFFFF;
+	width: 372px;
+	height: 256px;
+}
+.AppContainer footer ul {
+	height: 100px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	list-style: none;
+	padding: 30px 15px 0 15px;
+	margin: 0;
+}
+.AppContainer footer ul li {
+	flex-grow: 1;
+	text-align: center;
+	font: normal 16px Arial;
+	color: #CCCCCC;
+	cursor: pointer;
+	-moz-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
+	-webkit-transition: all 0.3s linear;
+	-ms-transition: all 0.3s linear;
+	transition: all 0.3s linear;
+}
+.AppContainer footer ul li:hover {
+	flex-grow: 2;
+	color: #666666;
+}
+.AppContainer footer ul li.active {
+	color: #333333;
+	flex-grow: 2;
+}
+.AppContainer footer ul li.active SPAN {
+	padding: 4px 4px 10px 4px;
+	border-bottom: solid 2px #CCCCCC;
+}
+.AppContainer footer ul li i {
+	display: block;
+	margin: 20px 0 6px 0;
+	font-size: 34px;
+}
+.AppContainer .week-label {
+	font: normal 20px Arial;
+	padding: 10px 30px 0 30px;
+	color: #BBBBBB;
+	text-align: center;
+}
+.AppContainer .week-label A {
+	display: block;
+	color: #CCCCCC;
+	font-size: 12px;
+	text-align: right;
+	margin-top: 70px;
+}
