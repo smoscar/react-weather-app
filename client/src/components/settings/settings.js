@@ -55,12 +55,37 @@ class Settings extends Component {
 			//The day's data gets fetched
 			const post = {
 				dayIndex: 0,
+				coords: nextProps.selectedCoords,
 				location: nextProps.selectedCoords
 			}
 			this.props.fetchDayInfo( post ).then(() => {
 				//The loading states gets removed
 				this.setState({loading: false});
 			});
+		}
+		
+		//When a different day was requested
+		if (nextProps.selectedDay !== this.props.selectedDay){
+			//The loading states gets updated
+			this.setState({loading: true});
+			
+			let icon = nextProps.weekDays[nextProps.selectedDay].icon;
+			
+			this.props.updateTime({
+				temp: nextProps.weekDays[nextProps.selectedDay].temperatureHigh,
+				wind: nextProps.weekDays[nextProps.selectedDay].windSpeed,
+				humidity: nextProps.weekDays[nextProps.selectedDay].humidity,
+				time: 12,
+				cloudy: ( icon === 'fog' || icon === 'cloudy' || icon === 'partly-cloudy-day' || icon === 'partly-cloudy-night' )
+			})
+			
+			//The day's data gets fetched
+			const post = {
+				dayIndex: nextProps.selectedDay,
+				coords: nextProps.selectedCoords,
+				location: nextProps.selectedCoords
+			}
+			this.props.fetchDayInfo( post ).then(() => this.setState({loading: false}));
 		}
 	}
 	
@@ -110,7 +135,8 @@ Settings.propTypes = {
 	day: PropTypes.object.isRequired,
 	weekDays: PropTypes.array,
 	selectedState: PropTypes.object,
-	selectedCoords: PropTypes.string
+	selectedCoords: PropTypes.string,
+	selectedDay: PropTypes.number
 }
 
 const mapStateToProps = state => ({
@@ -122,7 +148,8 @@ const mapStateToProps = state => ({
 	humidity: state.settings.humidity,
 	time: state.settings.time,
 	cloudy: state.settings.cloudy,
-	day: state.settings.day
+	day: state.settings.day,
+	selectedDay: state.calendar.selectedDay
 })
 
 const mapDispatchToProps = {
