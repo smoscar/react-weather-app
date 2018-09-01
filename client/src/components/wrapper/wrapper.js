@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 
 import Calendar from '../calendar/calendar';
 import Location from '../location/location';
-
+import Settings from '../settings/settings';
 
 class Wrapper extends Component {
 	constructor(props) {
@@ -24,8 +24,9 @@ class Wrapper extends Component {
     return (
       <div className={"App time12 cloudy"}>
 				<div className="wrapper">
-					<section class = "AppContainer">
+					<section className="AppContainer">
 	        	<Location />
+						<Settings />
 	        	<Calendar />
 					</section>
 				</div>

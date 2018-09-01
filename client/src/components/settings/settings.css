@@ -1,0 +1,71 @@
+/*For the settings component*/
+.AppContainer aside.weather-details {
+	font: normal 18px Arial;
+	padding: 0 30px;
+	color: #FFFFFF;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	opacity: 1;
+	-moz-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
+	-webkit-transition: all 0.3s linear;
+	-ms-transition: all 0.3s linear;
+	transition: all 0.3s linear;
+}
+.AppContainer aside.weather-details.loading {
+	opacity: 0
+}
+.AppContainer aside.weather-details span {
+	padding: 0 8px
+}
+.AppContainer aside.weather-details span i {
+	color: #FFFFFF;
+	margin-right: 4px;
+}
+.AppContainer aside.weather-details h1,
+.AppContainer aside.weather-details .time-adjuster {
+	width: 100%;
+	text-align: center;
+
+}
+.AppContainer aside.weather-details h1 {
+	margin: 0 0 16px 0;
+	font: normal 38px Arial;
+	font-weight: 100;
+}
+.AppContainer aside.weather-details .time-adjuster {
+	margin-top: 14px;
+}
+.AppContainer aside.weather-details .slider {
+	-webkit-appearance: none;
+	width: 80%;
+	height: 10px;
+	border-radius: 5px;
+	background: #EEEEEE;
+	outline: none;
+	-webkit-box-shadow: inset 0px 3px 3px 0px rgba(0,0,0,0.1);
+	-moz-box-shadow: inset 0px 3px 3px 0px rgba(0,0,0,0.1);
+	box-shadow: inset 0px 3px 3px 0px rgba(0,0,0,0.1);
+}
+.AppContainer aside.weather-details .slider::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	background: #1abc9c;
+	border-color: #17a689;
+	cursor: pointer;
+	-webkit-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.1);
+	-moz-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.1);
+	box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.1);
+}
+.AppContainer aside.weather-details .slider::-moz-range-thumb {
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	background: #1abc9c;
+	border-color: #17a689;
+	cursor: pointer;
+}

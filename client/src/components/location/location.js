@@ -25,7 +25,7 @@ class Location extends Component {
 		this.setState({isActive: true});
 	}
 	
-	//Function that handles the update of the state dropdown TODO set state to loading
+	//Function that handles the update of the state dropdown
 	handleStatesChange(event){
 		
 		const selectedState = event.target.value;
@@ -35,17 +35,13 @@ class Location extends Component {
 		this.setState({loading: true});
 		
 		this.props.selectState(selectedState)
-		this.props.fetchCities(selectedState)
+		return this.props.fetchCities(selectedState)
 			.then(() => {
 				//The first city's coordenates are selected
 				let firstCity = that.props.cities[0];
 				this.props.selectCity(firstCity.lat + "," + firstCity.lng);
 				
-				const post = {
-					coords: this.props.selectedCoords
-				}
-				this.props.fetchWeekForLocation(post)
-					.then(() => this.setState({loading: false}));
+				this.setState({loading: false});
 			})
 	}
 	
@@ -78,7 +74,14 @@ class Location extends Component {
 		this.props.fetchStates()
 			.then(() => {
 				//The event handler gets triggered to get the initial cities
-				this.handleStatesChange({target: {value: that.props.states[0].value}});
+				this.handleStatesChange({target: {value: that.props.states[0].value}}).then(() => {
+					const post = {
+						coords: this.props.selectedCoords
+					}
+					
+					this.props.fetchWeekForLocation(post)
+						.then(() => this.setState({loading: false}));
+				});
 			})
 	}
 	
