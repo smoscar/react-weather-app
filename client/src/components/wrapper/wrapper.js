@@ -10,19 +10,27 @@ import Settings from '../settings/settings';
 class Wrapper extends Component {
 	constructor(props) {
 		super(props);
-		this.state = { };
+		this.state = {
+			timeClass: 'time12',
+			cloudClass: ''
+		};
 	}
 	
 	//Lifecycle method to catch updates to the calendar
 	componentWillReceiveProps(nextProps){
-		if ('weekDays' in nextProps){
-			console.log(nextProps)
+		//When the time gets updated
+		if ('time' in nextProps && nextProps.time !== this.props.time ){
+			this.setState({
+				timeClass: 'time' + nextProps.time,
+				cloudClass: (nextProps.cloudy ? 'cloudy' : '')
+			});
+			
 		}
 	}
 	
   render() {
     return (
-      <div className={"App time12 cloudy"}>
+      <div className={"App " + this.state.timeClass + " " + this.state.cloudClass}>
 				<div className="wrapper">
 					<section className="AppContainer">
 	        	<Location />
@@ -36,10 +44,14 @@ class Wrapper extends Component {
 }
 
 Wrapper.propTypes = {
+	time: PropTypes.number,
+	cloudy: PropTypes.bool,
 	weekDays: PropTypes.array
 }
 
 const mapStateToProps = state => ({
+	time: state.settings.time,
+	cloudy: state.settings.cloudy,
 	weekDays: state.locations.weekDays
 })
 
