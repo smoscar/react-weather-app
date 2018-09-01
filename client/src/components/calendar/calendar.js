@@ -1,25 +1,29 @@
 import React, { Component } from 'react';
 import './calendar.css';
 
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+
 class Calendar extends Component {
-	constructor() {
-		super();
+	constructor(props) {
+		super(props);
 		this.state = {
 			week: []
 		};
 	}
 	
-	componentDidMount(){
-		fetch('/api/v1/getWeek', {method: 'POST'})
-			.then(res => res.json())
-			.then(week => this.setState({week}, () => console.log('Week fetched..', week)))
+	//Lifecycle method to catch updates to the calendar
+	componentWillReceiveProps(nextProps){
+		if ('weekDays' in nextProps){
+			console.log(nextProps)
+		}
 	}
 	
   render() {
     return (
       <div>
 				<ul>
-				 {this.state.week.map( day => 
+				 {this.props.weekDays.map( day => 
 					 <li key={day.time}>
 					 	{day.dayName}
 					 </li>
@@ -30,4 +34,12 @@ class Calendar extends Component {
   }
 }
 
-export default Calendar;
+Calendar.propTypes = {
+	weekDays: PropTypes.array
+}
+
+const mapStateToProps = state => ({
+	weekDays: state.locations.weekDays
+})
+
+export default connect(mapStateToProps, {})(Calendar);
